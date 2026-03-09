@@ -1,54 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-    background-color: rgba(58, 90, 64, 0.8); 
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: rgba(58, 90, 64, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #588157;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  color: #588157;
+  margin-bottom: 20px;
 }
 
 main {
-    padding: 40px 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto; 
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 fieldset {
-    border: 2px solid #588157;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+  border: 2px solid #588157;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 legend {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #588157;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #588157;
 }
 
 label {
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .required::after {
-    content: '*';
-    color: #bc6c25;
-    margin-left: 5px;
+  content: "*";
+  color: #bc6c25;
+  margin-left: 5px;
 }
 
 input[type="text"],
@@ -59,13 +69,13 @@ input[type="datetime-local"],
 input[type="file"],
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus,
@@ -75,8 +85,8 @@ input[type="date"]:focus,
 input[type="datetime-local"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #588157; 
-    outline: none; 
+  border-color: #588157;
+  outline: none;
 }
 
 input[type="radio"]:focus,
@@ -92,7 +102,7 @@ textarea:focus {
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .emoji-rating {
@@ -129,49 +139,49 @@ textarea {
 
 .submit-btn,
 .cancel-btn {
-    background-color: #588157;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 10px; 
+  background-color: #588157;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
 }
 
 .submit-btn:hover {
-    background-color: #588157;
-    box-shadow: 0 0 10px rgba(88, 129, 87, 0.4); 
+  background-color: #588157;
+  box-shadow: 0 0 10px rgba(88, 129, 87, 0.4);
 }
 
 .cancel-btn {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 
 .cancel-btn:hover {
-    background-color: #d32f2f; 
+  background-color: #d32f2f;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    main {
-        padding: 20px;
-    }
+  main {
+    padding: 20px;
+  }
 
-    h2 {
-        font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    fieldset {
+  fieldset {
     margin-bottom: 1.2rem;
-    }
+  }
 
-    .submit-btn,
-    .cancel-btn {
-        width: 100%; 
-        margin: 5px 0;
-    }
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 
 select {
@@ -186,7 +196,6 @@ select {
   background-position: right 1rem center;
   background-size: 1rem;
   margin: 10px 0 25px;
-  
 }
 
 select[multiple] {
@@ -200,7 +209,6 @@ select[multiple] {
   color: #333;
   scroll-behavior: smooth;
 }
-
 
 .radio-group {
   display: flex;
@@ -255,4 +263,3 @@ input[type="checkbox"] {
   padding: 5px;
   vertical-align: middle;
 }
-

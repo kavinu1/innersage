@@ -3,16 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="1; url=home.html" />
     <title>Welcome to SAGE</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/splash.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
-    <script>
-      setTimeout(function () {
-        window.location.href = "home.html";
-      }, 4500);
-    </script>
   </head>
   <body>
     <section id="splash">
@@ -47,7 +41,7 @@
           splash.style.display = "fadeOut 0.5s ease forwards";
 
           setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "home.html";
           }, 500);
         }, 3000);
       });
